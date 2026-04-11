@@ -6,7 +6,7 @@ SEN Portfolio ブラウザの **Nuxt 3 実装**。Nitro サーバーエンジン
 
 **Live demo**: https://sen.ltd/portfolio/portfolio-app-nuxt/
 
-![Screenshot](./docs/screenshot.png)
+![Screenshot](./assets/screenshot.png)
 
 ## バンドルサイズ比較（更新）
 
