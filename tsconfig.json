@@ -1,0 +1,5 @@
+{
+  // Nuxt generates .nuxt/tsconfig.json during build/prepare.
+  // This root tsconfig extends it so editors and vitest pick up correct paths.
+  "extends": "./.nuxt/tsconfig.json"
+}
