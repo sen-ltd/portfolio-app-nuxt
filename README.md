@@ -61,3 +61,10 @@ MIT. See [LICENSE](./LICENSE).
 ---
 
 Part of the [SEN portfolio series](https://sen.ltd/portfolio/). Entry 025.
+
+<!-- sen-publish:links -->
+## Links
+
+- 🌐 Demo: https://sen.ltd/portfolio/portfolio-app-nuxt/
+- 📝 dev.to: https://dev.to/sendotltd/porting-to-nuxt-3-7-larger-than-react-the-only-regression-in-the-series-and-why-3k1b
+<!-- /sen-publish:links -->
