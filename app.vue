@@ -219,27 +219,7 @@ onMounted(async () => {
               >
                 ↗ {{ m.demoLabel }}
               </a>
-              <a
-                v-if="entry.github"
-                :href="entry.github"
-                class="action-btn"
-                target="_blank"
-                rel="noopener"
-              >
-                {{ m.githubLabel }}
-              </a>
-              <div v-if="entry.articles.length > 0" class="articles">
-                <a
-                  v-for="a in entry.articles"
-                  :key="a.url"
-                  :href="a.url"
-                  class="article-link"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  {{ a.platform }}
-                </a>
-              </div>
+              <IconLinks :entry="entry" :lang="lang" />
               <span v-if="entry.testCount && entry.testCount > 0" class="tests-badge">
                 {{ m.testsLabel(entry.testCount) }}
               </span>

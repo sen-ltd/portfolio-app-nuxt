@@ -306,6 +306,62 @@ main {
   border-color: var(--accent-2);
 }
 
+/* Icon link row — ported from portfolio-app-react. Brand-colored SVGs sit on
+   a neutral rounded hover plate. */
+.icon-links {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  color: var(--muted);
+  text-decoration: none;
+  background: var(--panel-2);
+  transition: background 0.12s, transform 0.12s;
+}
+.icon-link:hover {
+  background: var(--border);
+  transform: translateY(-1px);
+}
+.icon-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+/* The brand SVGs ship with near-black fills (GitHub #181717, X #000000,
+   dev.to #0A0A0A) which vanish on the dark Nuxt theme. Invert them so they
+   read as light foreground icons; Qiita green stays untouched. */
+.icon-link svg {
+  filter: invert(1);
+}
+.icon-link svg[aria-label="Qiita"] {
+  filter: none;
+}
+
+.article-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.12s, border-color 0.12s;
+}
+.article-badge:hover {
+  color: var(--accent-2);
+  border-color: var(--accent-2);
+}
+
 .tests-badge {
   padding: 4px 8px;
   background: var(--panel-2);
